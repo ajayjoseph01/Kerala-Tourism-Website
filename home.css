@@ -1,0 +1,292 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: rgba(255,255,255,0.6);
+    transition: 0.5s;
+}
+.navbar ul li a{
+    text-transform: uppercase;
+    
+    text-decoration: none;
+    color: white;
+   
+    
+}
+.navbar ul li a.active{
+    color: yellow !important;
+}
+.navbar-toggler-icon{
+    
+    background-color: green;
+}
+.dropdown-menu{
+    background-color: rgba(255,255,255,0.6);
+    width: 100px;
+    transition: 0.5s;
+}
+/* carousel*/
+
+.carousel-inner,.carousel-item{
+    height: 400px;
+    position: relative;
+}
+.carousel-inner .carousel-item img{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+/*exprience*/
+
+.container-fluid{
+    justify-content: center;
+    
+}
+section{
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+}
+.images .imagebox{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 5px;
+
+}
+.images .imagebox img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.caption{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}    
+.caption p{
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.overlay{
+    position: absolute;
+    opacity: 0;
+    /*top: 100%;*/
+    width: 250px;
+    height: 300px;
+    background:linear-gradient(to bottom,rgba(255, 0, 0, 0.5),rgba(0, 0, 255, 0.5));
+    transform: scale(0);
+    transition: 1s;
+    
+
+}
+.overlay p{
+    color: white;
+}
+.images .imagebox:hover .overlay{
+    opacity: 1;
+    /*top: 0;*/
+    transition: 1s;
+    transform: scale(1);
+}
+
+
+    /*top desti*/
+
+.d-block{
+    margin: 2px;
+}
+.container{
+    background-color: whitesmoke;
+}
+.topdest{
+    position: relative;
+}
+/* vanbar color change during window scroll*/
+
+nav.active,.dropdown-menu.active{
+    background-color: rgb(34, 21, 146);
+    transition: 0.5s;
+}
+
+
+/* vedio roww  */
+
+div.vedios{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+div.vedios embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.vediocaption{
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text button{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    
+    background-color: rgba(0,0,0,0.7);
+    margin: auto;
+  
+}
+
+
+/*footer*/
+h5{
+    color: rgb(85, 85, 233);
+}
+.footer a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+.footer .input-group-text{
+    background-color: rgb(34, 21, 146);
+    color: white;
+}
+
+.footerbtn{
+    font-size: 25px;
+    background-color: rgb(231, 18, 203);
+}
+.footerbtn:hover{
+    background-color: rgb(34, 21, 146);
+}
+hr.foothr{
+    border: none;
+    height: 4px;
+    background: white;
+}
+
+
+
+.topdest::before{
+    content: attr(data-value);
+    position: absolute;
+    font-size: 27px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    text-shadow: 0 0 10px #9b15c4,0 0 10px #9b15c4,0 0 10px #9b15c4;
+    opacity: 0;
+    letter-spacing: 16px;
+    transition: 0.7s;
+}
+.topdest:hover{
+    color: rgb(255, 243, 225);
+
+}
+.topdest:hover::before{
+    opacity: 1;
+    letter-spacing: 0;
+}
+
+
+.experi::before{
+    content: 'Experience Kerala';
+    position: absolute;
+    font-size: 27px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    text-shadow: 0 0 10px #9b15c4,0 0 10px #9b15c4,0 0 10px #9b15c4;
+    opacity: 0;
+    letter-spacing: 16px;
+    transition: 0.7s;
+}
+.experi:hover{
+    color: rgb(248, 248, 248);
+
+}
+.experi:hover::before{
+    opacity: 1;
+    letter-spacing: 0;
+}
+.experi{
+    position: relative;
+}
+
+
+
+
+
+/*back to top*/
+
+.fa-arrow-circle-up{
+    font-size: 45px;
+    color: green;
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+}
+
+/* owl-carousel*/
+
+.owl-nav .owl-prev{
+    position: absolute;
+    top:40%;
+    left: 5%;
+   
+    color: white !important;
+    font-size: 30px !important;
+    text-align: center;
+}
+.owl-nav .owl-next{
+    position: absolute;
+    top:40%;
+    right: 5%;
+   
+    color: white !important;
+    font-size: 30px !important;
+    text-align: center;
+}
+
+
+
+
+.swiper-slide{
+   
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    position: relative;
+}
+.img-swiper{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+
+}

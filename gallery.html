@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            justify-content: center;
+          
+           
+        }
+        .nav ul{
+            list-style: none;
+            text-decoration: none;
+            display: flex;
+            
+        }
+        .nav ul li{
+            background-color: burlywood;
+            padding: 3px 22px;
+            margin:5px  ;
+            color: white;
+            text-transform: uppercase;
+            position: relative;
+            cursor: pointer;
+            font-size: 15px;
+        }
+     
+        .nav ul li.active{
+            background-color: cadetblue;
+        }
+        img{
+            height: 250px;
+            margin: 2px;
+        }
+        .move-to-home{
+            position: fixed;
+            top: 95px;
+            left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Top Destinations</h1>
+            </div>
+        </div>    
+        <div class="row nav ">
+            <div class="col-md-12 text-center">
+                <ul>
+                    <li class="list active" data-filter="all">all</li>
+                    <li class="list"  data-filter="houseboat">house boat</li>
+                    <li class="list" data-filter="waterfall">waterfalls</li>
+                    <li class="list" data-filter="river">river</li>
+                </ul>
+            </div>
+        </div>
+    </div>        
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 houseboat">
+                <img class="d-block w-100" src="https://www.keralatourism.org/images/houseboat-640x360.jpg">
+            </div>
+            <div class="col-md-3 col-sm-6 waterfall">
+                <img  class="d-block w-100" src="https://www.worldlistmania.com/wp-content/uploads/2012/11/Athirappilly.jpg">
+            </div>
+            <div class="col-md-3 col-sm-6 forest">
+                <img class="d-block w-100"  src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-kk15oh30v7r12sdnes0g272ik0-20171030050416.Medi.jpeg">
+            </div>
+            <div class="col-md-3 col-sm-6 river">
+                <img  class="d-block w-100" src="https://i.pinimg.com/originals/34/68/a6/3468a6144c6e982b5d84eabd2e9afff4.jpg">
+            </div>
+
+        </div>
+        <div class="row py-3">
+            <div class="col-md-3 col-sm-6 waterfall">
+                <img  class="d-block w-100" src="https://img.traveltriangle.com/blog/wp-content/uploads/2015/07/Chethalayam-Waterfalls.jpg">
+            </div>
+            <div class="col-md-3 col-sm-6 river">
+                <img  class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTpzrZv5A4lDhZQZuhMLKLchwAR2zwl2kVqQhl9YzfYatOR-NixAE2nJ2wXKVGcO5eO5I&usqp=CAU">
+            </div>
+            <div class="col-md-3 col-sm-6 forest">
+                <img class="d-block w-100"  src="https://static.india.com/wp-content/uploads/2018/08/Haunted-Kerala-Trichur.jpg">
+            </div>
+            <div class="col-md-3 col-sm-6 houseboat">
+                <img  class="d-block w-100 " src="https://i.ytimg.com/vi/Z3adrTFRxOw/maxresdefault.jpg">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 forest">
+                <img  class="d-block w-100" src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/05/24/Photos/Processed/forest2-kJTD--621x414@LiveMint.JPG">
+            </div>
+            <div class="col-md-3 col-sm-6 river">
+                <img class="d-block w-100"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZPlfcoqu5FvybFwBbNA41yqsjNgDNVXRw1Q&usqp=CAU">
+            </div>
+            <div class="col-md-3 col-sm-6 houseboat">
+                <img  class="d-block w-100" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/Kerala_0.png?5ibIR4Pjk9Sc9X9dk4uEpECd0kM2Qxt3&size=770:433">
+            </div>
+            <div class="col-md-3 col-sm-6 waterfall">
+                <img  class="d-block w-100" src="https://img.onmanorama.com/content/dam/mm/en/travel/getting-about-kerala/thrissur/images/2017/9/2/waterfall-getty.jpg.transform/schema-4x3/image.jpg">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 houseboat">
+                <img class="d-block w-100" src="https://www.keralatourism.org/images/houseboat-640x360.jpg">
+            </div>
+            <div class="col-md-3 col-sm-6 waterfall">
+                <img  class="d-block w-100" src="https://www.worldlistmania.com/wp-content/uploads/2012/11/Athirappilly.jpg">
+            </div>
+            <div class="col-md-3 col-sm-6 forest">
+                <img class="d-block w-100"  src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-kk15oh30v7r12sdnes0g272ik0-20171030050416.Medi.jpeg">
+            </div>
+            <div class="col-md-3 col-sm-6 river">
+                <img  class="d-block w-100" src="https://i.pinimg.com/originals/34/68/a6/3468a6144c6e982b5d84eabd2e9afff4.jpg">
+            </div>
+
+        </div>
+
+    </div>  
+    <a href="home.html" class="move-to-home"><u><i class="fa fa-home" style="font-size:30px;color:red"></i><span style="color: rgb(228, 109, 11);">HOME </span></u></a>     
+     
+
+    <script>
+        $(document).ready(function(){
+            $('.list').click(function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            }),
+            $('.list').click(function(){
+                const value=$(this).attr('data-filter');
+                if(value=="all"){
+                    $('.col-md-3').show('1000');
+                }
+                else{
+                    $('.col-md-3').not('.'+value).hide('1000');
+                    $('.col-md-3').filter('.'+value).show('1000');
+
+                }
+            })
+        })
+    </script>
+</body>
+</html>
